@@ -1,0 +1,272 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+& h1,
+h2,
+h3,
+a,
+p,
+textarea,
+input {
+  font-family: "Helvetica", sans-serif;
+}
+main {
+  width: 100%;
+
+  .title {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    gap: 10px;
+    & p {
+      color: #5863e3;
+      font-size: 17px;
+      font-weight: bold;
+      line-height: 19.55px;
+    }
+
+    & h1 {
+      font-size: 49px;
+      line-height: 56.35px;
+    }
+  }
+}
+
+.form-contact {
+  width: 80%;
+  margin: 5% auto;
+}
+
+.form-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+
+  form {
+    width: 100%;
+    display: flex;
+    gap: 15px;
+    & input,
+    textarea,
+    button {
+      background: rgba(248, 248, 248, 1);
+      outline: none;
+      padding: 20px;
+      border: none;
+      border: 2px solid rgba(212, 211, 211, 1);
+      color: #99999a;
+      font-size: 14px;
+      line-height: 16.1px;
+      font-weight: 700;
+    }
+    & input::placeholder,
+    textarea::placeholder {
+      color: #99999a;
+    }
+
+    & input:focus,
+    textarea:focus {
+      border: 2px solid rgba(118, 114, 114, 0.847);
+    }
+
+    & .description {
+      width: 60%;
+    }
+    & .description textarea {
+      width: 100%;
+      resize: none;
+      height: 100%;
+    }
+
+    & .inputs-container {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      width: 40%;
+    }
+
+    & .inputs-container input,
+    button {
+      width: 100%;
+    }
+    & .inputs-container button {
+      background-color: #5968f4;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-weight: b;
+    }
+
+    & .inputs-container button:hover {
+      background-color: #4a57cd;
+    }
+  }
+
+  .contact {
+    display: flex;
+    justify-content: space-around;
+
+    & .contact-card {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+      & h3 {
+        color: #4e4d54;
+        font-size: 20px;
+        line-height: 23px;
+        font-weight: 700;
+      }
+      & p {
+        font-size: 15px;
+        line-height: 17.25px;
+        font-weight: 700;
+        color: #99999a;
+      }
+
+      & div {
+        background-color: #5968f4;
+        border-radius: 100%;
+        padding: 10px;
+        & img {
+          width: 40px;
+          height: 35px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+  }
+}
+& .pictures {
+  padding-bottom: 50px;
+
+  & .title {
+    width: 80%;
+    margin: 5% auto;
+
+    & h1 {
+      width: 548px;
+    }
+  }
+  & .images {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    & img {
+      width: 25vw;
+      height: 25vw;
+      object-fit: cover;
+    }
+  }
+}
+
+footer {
+  height: 372px;
+  background-color: #000000;
+  display: flex;
+  align-items: center;
+  .footer-content-wrapper {
+    margin: 5% auto;
+    width: 80%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    & .about-us {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 28%;
+      gap: 20px;
+
+      & h2 {
+        color: #ffffff;
+        font-size: 26px;
+        line-height: 29.9px;
+        font-weight: 700;
+      }
+
+      & p {
+        color: #99999a;
+        font-size: 17px;
+        font-weight: 700;
+        line-height: 19.55px;
+      }
+
+      & .socials {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+      }
+    }
+
+    .reach-out-info {
+      display: flex;
+      flex-direction: row;
+      gap: 30px;
+
+      & .useful-links,
+      .privacy,
+      .contact-info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+
+        & h2 {
+          color: white;
+          font-size: 21px;
+          line-height: 24.15px;
+          font-weight: 400;
+        }
+
+        & ul {
+          display: inherit;
+          flex-direction: column;
+          gap: 10px;
+          & a {
+            line-height: 19.55px;
+            font-size: 17px;
+            font-weight: 400;
+            color: #5863e3;
+            cursor: pointer;
+          }
+        }
+      }
+
+      .contact-info {
+        ul {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          height: 100%;
+          & div {
+            display: flex;
+            gap: 10px;
+            flex-direction: row;
+            align-items: center;
+            color: white;
+            cursor: pointer;
+
+            & img {
+              width: 20px;
+              height: 20px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}
